@@ -10,7 +10,7 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - uses: kpTestOrg/ARMTesting@master
+    - uses: Azure/arm-deploy@bugbashFixes
       id: deployaction1
       with:
         scope: managementgroup
