@@ -15,6 +15,6 @@ jobs:
       with:
         scope: managementgroup
         managementgroupid: E2eTestGroupForArmAction
-        region: WestUS
+        region: West US
         template: examples/template/template.json
         parameters: examples/template/parameters.json
