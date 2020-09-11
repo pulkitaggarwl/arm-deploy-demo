@@ -10,11 +10,10 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - uses: Azure/arm-deploy@bugbashFixes
+    - uses: Azure/arm-deploy@v1
       id: deployaction1
       with:
-        scope: managementgroup
-        managementgroupid: kptestmg
-        region: West US
-        template: examples/template/template.json
-        parameters: examples/template/parameters.json
+        scope: subscription
+        region: WestUS
+        template: https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/emptyRG.json
+        parameters: rgName=demoResourceGroup rgLocation=central us
