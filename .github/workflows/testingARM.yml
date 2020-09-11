@@ -17,4 +17,4 @@ jobs:
         subscriptionId: c00d16c7-6c1f-4c03-9be1-6934a4c49682
         region: WestUS
         template: https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/emptyRG.json
-        parameters: rgName=demoResourceGroup rgLocation=central us
+        parameters: rgName=demoResourceGroup rgLocation="central us"
