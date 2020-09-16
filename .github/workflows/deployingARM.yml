@@ -17,4 +17,4 @@ jobs:
         subscriptionId: afc11291-9826-46be-b852-70349146ddf8
         resourceGroupName: ARMDemoRG
         template: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-webapp-basic-linux/azuredeploy.json
-        parameters: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-webapp-basic-linux/azuredeploy.parameters.json
+        parameters: webAppName=ignitearmdeployapp 
