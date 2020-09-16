@@ -13,9 +13,9 @@ jobs:
     - uses: azure/arm-deploy@v1
       id: deployaction
       with:
-        scope: resourcegroup
-        subscriptionId: c00d16c7-6c1f-4c03-9be1-6934a4c49682
-        resourceGroupName: kptest
-        template: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-webapp-basic-linux/azuredeploy.json
-        parameters: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-webapp-basic-linux/azuredeploy.parameters.json
+        scope: managementgroup
+        managementGroupId: kptestnewmg101
+        region: WestUS
+        templates: https://kpteststorage0.blob.core.windows.net/kptestcontainer/mgtemp.json
+        parameters: https://kpteststorage0.blob.core.windows.net/kptestcontainer/mgparam.json
 
